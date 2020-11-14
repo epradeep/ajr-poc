@@ -1,0 +1,174 @@
+
+@media only screen and (min-width: 1200px) and (max-width: 1300px)
+{
+
+
+}
+
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) 
+{
+    .sidebar-bg 
+    {
+	   width: 220px;
+	}
+    .new-button 
+    {
+       margin-left: 0;
+    }
+
+    .bg-main
+	{
+	   width: calc(100% - 220px);
+	}
+
+	.mobile-no
+	{
+	    font-size: 14px;
+	}
+
+	.btn-new 
+	{
+	  font-size: 13px;
+	}
+
+	.sidebar-bg .navbar-nav .nav-item.active 
+	{
+      min-width: 11.875em;
+	}
+
+	.social-icons .list-inline-item:not(:last-child) 
+	{
+      margin-right: 0.25rem;
+    }
+    
+    .tab-checkbox
+    {
+       margin-left: -10px;
+    }
+
+
+}
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) 
+{
+   
+   .sidebar-bg 
+    {
+	   width: 180px;
+	}
+    .new-button 
+    {
+       margin-left: 0;
+    }
+
+    .bg-main
+	{
+	   width: calc(100% - 180px);
+	}
+
+	.mobile-no
+	{
+	    font-size: 13px;
+	}
+
+	.btn-new 
+	{
+	  font-size: 11px;
+	}
+
+	.sidebar-bg .navbar-nav .nav-item.active 
+	{
+      min-width: 9.75em;
+	}
+
+	.social-icons .list-inline-item:not(:last-child) 
+	{
+      margin-right: 0.25rem;
+    }
+    
+    .tab-checkbox
+    {
+       margin-left: -10px;
+       text-align: center;
+    }
+
+    .mobile-box 
+    {
+      padding: .75rem .5em;
+    }
+
+    .sidebar-bg .navbar-dark .navbar-nav .nav-link 
+    {
+       font-size: 15px;
+    }
+	
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) 
+{
+	.sidebar-bg 
+    {
+	  width: 100%;
+	}
+
+	.bg-main
+	{
+       width: 100%;
+	}
+
+    .sidebar-bg .navbar-nav .nav-item.active 
+    {
+	    min-width: 2em;
+	}
+
+	.main-nav 
+	{
+	   padding-top: .5rem;
+	   padding-bottom: .5rem;
+	}
+
+	.navbar-right-top .nav-item:not(:last-child)
+	{
+	  box-shadow: unset;
+	}
+
+	.card-checkbox 
+	{
+       margin-right: 0;
+       text-align: left !important;
+    }
+    
+    .text-body 
+    {
+	   padding: .75rem .75rem .75rem 1rem !important;
+	   margin-left: 0;
+	   margin-right: 0;
+    }
+
+    .no-padding 
+    {
+      padding-left: 15px !important;
+    }
+
+    .text-right 
+    {
+	   text-align: left !important;
+	}
+
+	.custom-btn
+	{
+       margin-top: 10px;
+	}
+}
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) 
+{
+	
+		
+}
+
+

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <title>AJR</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/responsive.css">
+		<link href="css/all.css" rel="stylesheet"> 
+		<script src="js/jquery.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</head>
+    <body>
+        <div class="container-fluid top-border">
+		    <div class="row min-vh-100 flex-column flex-md-row main-row">
+		        <aside class=" p-0 sidebar-bg flex-shrink-1">
+		        	<div class="d-flex align-items-center justify-content-between mobile-box">
+		        		<div class="mobile-no"><i class="fas fa-phone-alt mr-1"></i> <span class="b-number">(912) 200-6690</span></div>
+		        		<div class="new-button">
+		        			<a href="#" class="btn btn-new btn-sm"><i class="fa fa-plus" aria-hidden="true"></i> New</a>
+		        		</div>
+		        	</div>
+		        	<ul class="nav d-flex align-items-center setting-bg">
+					    <li class="nav-item">
+					      <a class="nav-link active" href="#">
+					      	 <img src="images/sort.png" class="img-fluid sort-img" alt="">
+					      </a>
+					    </li>
+					    <li class="nav-item">
+					      <a class="nav-link" href="#">
+					      	 <i class="fas fa-cogs"></i>
+					      </a>
+					    </li>
+					</ul>
+		            <nav class="navbar navbar-expand navbar-dark sidebar-bg flex-md-column flex-row align-items-start py-2">
+		                <div class="collapse navbar-collapse">
+		                    <ul class="flex-md-column flex-row navbar-nav w-100 justify-content-between">
+		                        <li class="nav-item">
+		                            <a class="nav-link pl-0 text-nowrap" href="#"><i class="fas fa-bell mr-1"></i> <span class="d-none d-md-inline">Activities</span></a>
+		                        </li>
+		                        <li class="nav-item">
+		                            <a class="nav-link pl-0" href="#"><i class="fas fa-home mr-1"></i> <span class="d-none d-md-inline">Home</span></a>
+		                        </li>
+		                        <li class="nav-item active">
+		                            <a class="nav-link pl-0" href="#"><i class="fas fa-reply mr-1"></i> <span class="d-none d-md-inline">Inbox</span></a>
+		                        </li>
+		                        <li class="nav-item">
+		                            <a class="nav-link pl-0" href="#"><i class="fas fa-cogs mr-1"></i> <span class="d-none d-md-inline">Text Settings</span></a>
+		                        </li>
+		                        
+		                        <li class="nav-item">
+		                            <a class="nav-link pl-0" href="#"><i class="fas fa-phone-alt mr-1"></i> <span class="d-none d-md-inline">Manage Numbers</span></a>
+		                        </li>
+		                        <li class="nav-item">
+		                            <a class="nav-link pl-0" href="#"><i class="fas fa-phone-volume mr-1"></i> <span class="d-none d-md-inline">Buy Numbers</span></a>
+		                        </li>
+		                        <li class="nav-item">
+		                            <a class="nav-link pl-0" href="#"><i class="fas fa-file-alt mr-1"></i> <span class="d-none d-md-inline">Templates</span></a>
+		                        </li>
+		                        <li class="nav-item">
+		                            <a class="nav-link pl-0" href="#"><i class="fas fa-street-view mr-1"></i> <span class="d-none d-md-inline">Variables</span></a>
+		                        </li>
+		                        <li class="nav-item">
+		                            <a class="nav-link pl-0" href="#"><i class="fas fa-address-book mr-1"></i> <span class="d-none d-md-inline">Contacts</span></a>
+		                        </li>
+
+		                    </ul>
+		                </div>
+		            </nav>
+		        </aside>
+		        <main class=" bg-main flex-grow-1"> 
+	                <nav class="navbar navbar-expand-md navbar-light main-nav">
+	                	<div class="container nav-space">
+						  <a class="navbar-brand" href="#">Recents</a>
+						  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						    <span class="navbar-toggler-icon"></span>
+						  </button>
+						  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+						    <ul class="navbar-nav ml-auto navbar-right-top">
+						     <li class="nav-item active">
+								<div class="input-group search-form">
+							      <input class="form-control py-2 bg-transparent border-right-0 border-0 text-right" type="search" placeholder="Search">
+							      <div class="input-group-append">
+							          <div class="input-group-text border-0 bg-transparent pt-2" id="btnGroupAddon2"><i class="fa fa-search"></i></div>
+							      </div>
+							  </div>
+						      </li>
+						      <li class="nav-item active">
+						        <a class="nav-link" href="#"><i class="fas fa-align-right"></i></a>
+						      </li>
+						      <li class="nav-item">
+						        <a class="nav-link last-link" href="#"><i class="fas fa-ellipsis-v"></i></a>
+						      </li>
+						    </ul>
+						  </div>
+					  </div>
+					</nav>
+					<div class="container">
+						<div class="row pt-2 recents">
+							<div class="col-md-10 col-lg-11">
+							    <ul class="nav d-flex align-items-center">
+								    <li class="nav-item">
+								      <a class="nav-link active" href="#">Recents</a>
+								    </li>
+								    <li class="nav-item">
+								      <a class="nav-link" href="#">Favourite</a>
+								    </li>
+								    <li class="nav-item">
+								      <a class="nav-link" href="#">Archived</a>
+								    </li>
+								  </ul>
+						    </div>
+						    <div class="col-md-2 col-lg-1 ">
+						    	<div class="checkbox tab-checkbox py-1">
+							       <input type="checkbox">
+							   </div>
+						    </div>
+						</div>
+						<div class="row pt-2">
+							<div class="col-md-12 col-lg-12">
+								<div class="card main-card p-0" data-toggle="modal" data-target="#firstCard">
+									<div class="card-header bg-white">
+									  	<div class="row d-flex align-items-center">
+											<div class="col-md-9 col-lg-9">
+												 <div class="media border-0 p-0">
+												    <div class="circle rounded-circle">
+													  <p class="circle-content">
+													   Lb
+													  </p>
+													</div>
+												  <div class="media-body">
+												    <h6 class="mb-0">
+												    	<span class="icon-right"><i class="fab fa-whatsapp icon-color"></i></span>
+												       Louis Bryan</h6>
+												       <small class="icon-color">Delivered</small>
+												  </div>
+												</div>
+											</div>
+											<div class="col-md-3 col-lg-3">
+												<div class="card-checkbox checkbox text-right">
+													<small class="mr-3">10 min ago</small>
+											       <input type="checkbox">
+											   </div>
+											</div>
+										</div>
+									  </div>
+									   <div class="card-body text-body">
+										  	<div class="row d-flex align-items-center">
+										  	    <div class="col-md-9 col-lg-9"> 
+										  	    	<div class="">
+												       <p class="card-text m-0 p-0">Hi Jordan!</p>
+												       <p class="card-text">Feels like it's been a while! How are you? Do you any for the remainder task of the week.</p>
+												    </div>
+										  	    </div>
+										  	    <div class="col-md-3 col-lg-3 no-padding"> 
+										  	    	<div class="align-items-start justify-content-start">
+												    	<div class="text-right">
+												    		<i class="fas fa-comments mr-2"></i>
+												    	    <small>View Conversation</small>
+												    	</div>
+										    	        <div class="social-icons mt-2">
+										    	        	<ul class="list-unstyled mb-0">
+										    	        		<li class="list-inline-item">
+										    	        			<a href="#"><i class="fas fa-bullseye"></i></a>
+										    	        		</li>
+										    	        		<li class="list-inline-item">
+										    	        			<a href="#"><i class="fas fa-user-edit"></i></a>
+										    	        		</li>
+										    	        		<li class="list-inline-item">
+										    	        			<a href="#"><i class="far fa-star"></i></a>
+										    	        		</li>
+										    	        		<li class="list-inline-item">
+										    	        			<a href="#"><i class="fas fa-reply"></i></a>
+										    	        		</li>
+										    	        		<li class="list-inline-item">
+										    	        			<a href="#"><i class="fas fa-box-tissue"></i></a>
+										    	        		</li>
+										    	        		<li class="list-inline-item">
+										    	        			<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+										    	        		</li>
+										    	        	</ul>
+												        </div>
+										            </div>
+										  	    </div>
+										  	</div>
+									    </div>
+								    </div>
+								</div>
+						    </div>
+						    <div class="row pt-2">
+								<div class="col-md-12 col-lg-12">
+									<div class="card main-card p-0" data-toggle="modal" data-target="#secondCard">
+										<div class="card-header bg-white">
+										  	<div class="row d-flex align-items-center">
+												<div class="col-md-8 col-lg-8">
+													 <div class="media border-0 p-0">
+													    <div class="circle skype">
+														  <p class="circle-content">
+														   Gb
+														  </p>
+														</div>
+													  <div class="media-body">
+													    <h6 class="mb-0">
+													    	<span class="icon-right"><i class="fab fa-skype"></i></span>
+													       Richardo Lisa</h6>
+													       <small class="skype-text">Pending</small>
+													  </div>
+													</div>
+												</div>
+												<div class="col-md-4 col-lg-4">
+													<div class="card-checkbox checkbox text-right">
+														<small class="mr-3">30 min ago</small>
+												       <input type="checkbox">
+												   </div>
+												</div>
+											</div>
+									    </div>
+									    <div class="card-body text-body">
+										  	<div class="row d-flex align-items-center">
+										  	    <div class="col-md-9 col-lg-9"> 
+										  	    	<div class="">
+												       <p class="card-text m-0 p-0">Hi Louis Bryan! glad to hear from you. I am fine. How are you. Yes I will available to finish this project. Let's do it.</p>
+												       <p class="card-text">What the status of banter2.0!</p>
+												    </div>
+										  	    </div>
+										  	    <div class="col-md-3 col-lg-3 no-padding"> 
+										  	    	<div class="align-items-start justify-content-start">
+												    	<div class="text-right">
+												    		<i class="fas fa-comments mr-2"></i>
+												    	    <small>View Conversation</small>
+												    	</div>
+										    	        <div class="social-icons mt-2">
+										    	        	<ul class="list-unstyled mb-0">
+										    	        		<li class="list-inline-item">
+										    	        			<a href="#"><i class="fas fa-bullseye"></i></a>
+										    	        		</li>
+										    	        		<li class="list-inline-item">
+										    	        			<a href="#"><i class="fas fa-user-edit"></i></a>
+										    	        		</li>
+										    	        		<li class="list-inline-item">
+										    	        			<a href="#"><i class="far fa-star"></i></a>
+										    	        		</li>
+										    	        		<li class="list-inline-item">
+										    	        			<a href="#"><i class="fas fa-reply"></i></a>
+										    	        		</li>
+										    	        		<li class="list-inline-item">
+										    	        			<a href="#"><i class="fas fa-box-tissue"></i></a>
+										    	        		</li>
+										    	        		<li class="list-inline-item">
+										    	        			<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+										    	        		</li>
+										    	        	</ul>
+												        </div>
+										            </div>
+										  	    </div>
+										  	</div>
+									    </div>
+									    
+									  </div>
+								</div>
+						    </div>
+
+						    <div class="row pt-2">
+								<div class="col-md-12 col-lg-12">
+									<div class="card main-card p-0" data-toggle="modal" data-target="#thirdCard">
+									  <div class="card-header bg-white">
+									  	<div class="row d-flex align-items-center">
+											<div class="col-md-8 col-lg-8">
+												 <div class="media border-0 p-0">
+												 	<img src="images/profile-user.png" alt="" class="dummy-user rounded-circle">
+												  <div class="media-body">
+												    <h6 class="mb-0">
+												    	<span class="icon-right"><i class="fab fa-facebook-square"></i></span>
+												       Erlich Bachman</h6>
+												       <small class="icon-color">Delivered</small>
+												  </div>
+												</div>
+											</div>
+											<div class="col-md-4 col-lg-4">
+												<div class="card-checkbox checkbox text-right">
+													<small class="mr-3">1 hr ago</small>
+											       <input type="checkbox">
+											   </div>
+											</div>
+										</div>
+									  </div>
+									   <div class="card-body text-body">
+										  	<div class="row d-flex align-items-center">
+										  	    <div class="col-md-9 col-lg-9"> 
+										  	    	<div class="">
+												       <p class="card-text m-0 p-0">Hello!</p>
+												       <p class="card-text m-0 p-0">banter2.0 is done, it is in testing phase.</p>
+												       <p class="card-text">Can you please provide the test detail of this project</p>
+												    </div>
+										  	    </div>
+										  	    <div class="col-md-3 col-lg-3 no-padding"> 
+										  	    	<div class="align-items-start justify-content-start">
+										    	        <div class="social-icons mt-2">
+										    	        	<ul class="list-unstyled mb-0">
+										    	        		<li class="list-inline-item">
+										    	        			<a href="#"><i class="fas fa-bullseye"></i></a>
+										    	        		</li>
+										    	        		<li class="list-inline-item">
+										    	        			<a href="#"><i class="fas fa-user-edit"></i></a>
+										    	        		</li>
+										    	        		<li class="list-inline-item">
+										    	        			<a href="#"><i class="far fa-star"></i></a>
+										    	        		</li>
+										    	        		<li class="list-inline-item">
+										    	        			<a href="#"><i class="fas fa-reply"></i></a>
+										    	        		</li>
+										    	        		<li class="list-inline-item">
+										    	        			<a href="#"><i class="fas fa-box-tissue"></i></a>
+										    	        		</li>
+										    	        		<li class="list-inline-item">
+										    	        			<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+										    	        		</li>
+										    	        	</ul>
+												        </div>
+										            </div>
+										  	    </div>
+										  	</div>
+									    </div>
+									  </div>
+									</div>
+						        </div>
+								<!-- firstCard -->
+								<div class="modal fade" id="firstCard" tabindex="-1" role="dialog" aria-labelledby="firstCardLabel" aria-hidden="true">
+								    <div class="modal-dialog modal-width" role="document">
+									    <div class="modal-content">
+										    <div class="modal-header model-header-bg">
+										        <h5 class="modal-title" id="firstCardLabel">Edit</h5>
+										        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										          <span aria-hidden="true">&times;</span>
+										        </button>
+										    </div>
+									        <div class="modal-body model-bg">
+										      	<div class="container-fuild">
+										      		<form action="#" method="post" novalidate>
+														<div class="form-row form-group d-flex align-items-end">
+														    <div class="col-md-11 col-lg-11">
+														      <label for="number">Number</label>
+														      <input type="tel" class="form-control" id="email" placeholder="Enter 10 Digit Number without '+1' or '1'" name="email">
+														    </div>
+														    <div class="col-md-1 col-lg-1">
+														      <button type="button" class="btn btn-info custom-btn">Add</button>
+														    </div>
+														</div>
+														<div class="form-group">
+														    <label for="cname">Customer Name</label>
+														    <input type="text" class="form-control" id="cname" placeholder="Customer Name" name="cname" required>
+														</div>
+														<div class="form-group">
+														    <label for="address">Address</label>
+														    <input type="text" class="form-control" id="address" placeholder="Address" name="address">
+														</div>
+														<div class="form-group">
+														    <label for="city">City</label>
+														    <input type="text" class="form-control" id="city" placeholder="City" name="city">
+														</div>
+														<div class="form-group">
+														    <label for="state">State</label>
+														    <input type="text" class="form-control" id="state" placeholder="State" name="state">
+														</div>
+														<div class="form-group">
+														    <label for="zip">Zip</label>
+														    <input type="text" class="form-control" id="zip" placeholder="12015" name="zip">
+														</div>
+														<div class="form-group">
+														    <label for="banumber">Billing Account Number</label>
+														    <input type="text" class="form-control" id="banumber" placeholder="" name="banumber">
+														</div>
+													</form>
+										      	</div>
+									        </div>
+										    <div class="modal-footer">
+										        <button type="button" class="btn btn-outline-secondary custom-btn" data-dismiss="modal">Close</button>
+										        <button type="button" class="btn btn-info custom-btn">Save</button>
+										      </div>
+									    </div>
+								    </div>
+								</div>
+								 <!-- secondCard -->
+								<div class="modal fade" id="secondCard" tabindex="-1" role="dialog" aria-labelledby="secondCardLabel" aria-hidden="true">
+								    <div class="modal-dialog modal-width" role="document">
+									    <div class="modal-content">
+										    <div class="modal-header model-header-bg">
+										        <h5 class="modal-title" id="secondCardLabel">Edit</h5>
+										        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										          <span aria-hidden="true">&times;</span>
+										        </button>
+										    </div>
+									        <div class="modal-body model-bg">
+										      	<div class="container-fuild">
+										      		<form action="#" method="post" novalidate>
+														<div class="form-row form-group d-flex align-items-end">
+														    <div class="col-md-11 col-lg-11">
+														      <label for="number">Number</label>
+														      <input type="tel" class="form-control" id="email" placeholder="Enter 10 Digit Number without '+1' or '1'" name="email">
+														    </div>
+														    <div class="col-md-1 col-lg-1">
+														      <button type="button" class="btn btn-info custom-btn">Add</button>
+														    </div>
+														</div>
+														<div class="form-group">
+														    <label for="cname">Customer Name</label>
+														    <input type="text" class="form-control" id="cname" placeholder="Customer Name" name="cname" required>
+														</div>
+														<div class="form-group">
+														    <label for="address">Address</label>
+														    <input type="text" class="form-control" id="address" placeholder="Address" name="address">
+														</div>
+														<div class="form-group">
+														    <label for="city">City</label>
+														    <input type="text" class="form-control" id="city" placeholder="City" name="city">
+														</div>
+														<div class="form-group">
+														    <label for="state">State</label>
+														    <input type="text" class="form-control" id="state" placeholder="State" name="state">
+														</div>
+														<div class="form-group">
+														    <label for="zip">Zip</label>
+														    <input type="text" class="form-control" id="zip" placeholder="12015" name="zip">
+														</div>
+														<div class="form-group">
+														    <label for="banumber">Billing Account Number</label>
+														    <input type="text" class="form-control" id="banumber" placeholder="" name="banumber">
+														</div>
+													</form>
+										      	</div>
+									        </div>
+										    <div class="modal-footer">
+										        <button type="button" class="btn btn-outline-secondary custom-btn" data-dismiss="modal">Close</button>
+										        <button type="button" class="btn btn-info custom-btn">Save</button>
+										      </div>
+									    </div>
+								    </div>
+								</div>
+								<!-- thridCard-->
+								<div class="modal fade" id="thirdCard" tabindex="-1" role="dialog" aria-labelledby="thridCardLabel" aria-hidden="true">
+								    <div class="modal-dialog modal-width" role="document">
+									    <div class="modal-content">
+										    <div class="modal-header model-header-bg">
+										        <h5 class="modal-title" id="thridCardLabel">Edit</h5>
+										        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										          <span aria-hidden="true">&times;</span>
+										        </button>
+										    </div>
+									        <div class="modal-body model-bg">
+										      	<div class="container-fuild">
+										      		<form action="#" method="post" novalidate>
+														<div class="form-row form-group d-flex align-items-end">
+														    <div class="col-md-11 col-lg-11">
+														      <label for="number">Number</label>
+														      <input type="tel" class="form-control" id="email" placeholder="Enter 10 Digit Number without '+1' or '1'" name="email">
+														    </div>
+														    <div class="col-md-1 col-lg-1">
+														      <button type="button" class="btn btn-info custom-btn">Add</button>
+														    </div>
+														</div>
+														<div class="form-group">
+														    <label for="cname">Customer Name</label>
+														    <input type="text" class="form-control" id="cname" placeholder="Customer Name" name="cname" required>
+														</div>
+														<div class="form-group">
+														    <label for="address">Address</label>
+														    <input type="text" class="form-control" id="address" placeholder="Address" name="address">
+														</div>
+														<div class="form-group">
+														    <label for="city">City</label>
+														    <input type="text" class="form-control" id="city" placeholder="City" name="city">
+														</div>
+														<div class="form-group">
+														    <label for="state">State</label>
+														    <input type="text" class="form-control" id="state" placeholder="State" name="state">
+														</div>
+														<div class="form-group">
+														    <label for="zip">Zip</label>
+														    <input type="text" class="form-control" id="zip" placeholder="12015" name="zip">
+														</div>
+														<div class="form-group">
+														    <label for="banumber">Billing Account Number</label>
+														    <input type="text" class="form-control" id="banumber" placeholder="" name="banumber">
+														</div>
+													</form>
+										      	</div>
+									        </div>
+										    <div class="modal-footer">
+										        <button type="button" class="btn btn-outline-secondary custom-btn" data-dismiss="modal">Close</button>
+										        <button type="button" class="btn btn-info custom-btn">Save</button>
+										      </div>
+									    </div>
+								    </div>
+								</div>
+							</div>
+					    </div>  
+			        </main>
+			    </div>
+			</div>
+    	
+	</body>
+</html>
